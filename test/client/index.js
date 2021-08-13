@@ -1,5 +1,4 @@
-import React, { Component, useState } from 'react';
-import { useEffect } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import { render, findDOMNode } from 'react-dom';
 import { ContainerQuery, applyContainerQuery, useContainerQuery } from '../../lib/index';
 
@@ -423,7 +422,7 @@ describe('useContainerQuery', function () {
           setSwap(true);
         }, 200);
       }, []);
-      
+
       if (swap) {
         return (
           <p data-testid="p-container" style={{ width: '200px' }} ref={containerRef}>
@@ -465,7 +464,7 @@ describe('useContainerQuery', function () {
           setSwap(true);
         }, 200);
       }, []);
-      
+
       if (swap) {
         return (
           <p data-testid="p-container" style={{ width: '200px' }} ref={containerRef}>
@@ -503,7 +502,7 @@ describe('useContainerQuery', function () {
           setSwap(true);
         }, 200);
       }, []);
-      
+
       if (swap) {
         return null;
       } else {
